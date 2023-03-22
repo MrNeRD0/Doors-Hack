@@ -56,7 +56,7 @@ else
 
     local useAnimation = tool.Animations.use
 
-    local function onTouchStart(touch)
+    local function onTouchStart()
         local target = touch.Target
         if target then
             if target:IsA("Model") then
