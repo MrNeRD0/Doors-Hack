@@ -57,7 +57,8 @@ else
     local useAnimation = tool.Animations.use
 
     local function onTouchStart()
-        local target = touch.Target
+        local mouse = game.Players.LocalPlayer:GetMouse()
+        local target = mouse.Target
         if target then
             if target:IsA("Model") then
                 print(target.Name)
