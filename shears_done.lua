@@ -94,5 +94,5 @@ else
         end
     end
     -- Connect the "onTouchStart" function to the tool's "Activated" event
-    tool.TouchStarted:Connect(onTouchStart)
+    tool.Activated:Connect(onTouchStart)
 end
